@@ -458,7 +458,7 @@ class Cart implements iCart
 	
 	public function __construct(
 		private iNotificationService $notificationService,
-		private VatManager $vatManager,
+		private PriceCalculator $priceCalculator,
 	) {}
 	
 	public function getOrder(): Order
